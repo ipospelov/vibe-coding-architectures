@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Snake Game</title>
+  <link rel="stylesheet" href="src/presentation/web/styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    
+    main {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .instructions {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      padding: 15px;
+      background-color: #e9f7ef;
+      border-radius: 4px;
+      border-left: 4px solid #4CAF50;
+    }
+    
+    .instructions h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    .instructions ul {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maze Snake Game</h1>
+  </header>
+  
+  <main>
+    <div id="game-container">
+      <div class="instructions">
+        <h2>How to Play</h2>
+        <ul>
+          <li>Use arrow keys or WASD to control the snake</li>
+          <li>Eat food to grow and increase your score</li>
+          <li>Avoid hitting the maze walls, boundaries, or yourself</li>
+          <li>A new random maze is generated for each game</li>
+          <li>Press the Restart button to play again after game over</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>Maze Snake Game - A Layered Architecture Implementation</p>
+  </footer>
+  
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

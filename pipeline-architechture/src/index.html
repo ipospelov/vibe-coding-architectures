@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-container">Score: <span id="score">0</span></div>
+        <canvas id="game-canvas"></canvas>
+        <div id="game-over" class="hidden">
+            <div class="game-over-content">
+                <h2>Game Over</h2>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-button">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="pipeline/runner.js"></script>
+</body>
+</html>
